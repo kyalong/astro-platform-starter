@@ -79,11 +79,11 @@ export default function NewShape(props: Props) {
 
                 <div className="form-group">
                     <label htmlFor="name">文件名:</label>
-                    <input type="text" id="name" name="name" placeholder="example.json" value={formData.name}  />
+                    <input type="text" id="name" name="name" placeholder="example.json" value={formData.name} onChange={handleChange} />
                 </div>
                 <div className="form-group">
                     <label htmlFor="data">JSON 内容:</label>
-                    <textarea id="data" name="data" placeholder='{"key": "value"}' value={formData.data} ></textarea>
+                    <textarea id="data" name="data" placeholder='{"key": "value"}' value={formData.data} onChange={handleChange}></textarea>
                 </div>
 
                 <div className="actions">
