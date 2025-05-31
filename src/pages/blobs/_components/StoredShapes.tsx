@@ -67,6 +67,7 @@ export default function StoredShapes(props: Props) {
                         <span className="text-gray-900">Please upload some shapes!</span>
                     )}
                 </div>
+                {}
                 {previewData && (
                     <div className="p-4 border-t border-gray-200 aspect-square text-primary">
                         <ShapePreview {...previewData} />
