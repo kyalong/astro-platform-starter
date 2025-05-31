@@ -19,11 +19,10 @@ export default function NewShape(props: Props) {
     };
 
     const defaultData = {
-    name:'defaultData',
-    data:{
-        aa:111
-
-        }
+        "name":"defaultData",
+        "data":{
+            "aa":111
+            }
     };
     const uploadBlob = async () => {
         const response = await fetch('/api/blobs', {
