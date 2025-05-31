@@ -77,12 +77,12 @@ export default function NewShape(props: Props) {
                 <h1>JSON 文件管理 (Netlify Blobs)</h1>
 
                 <div className="form-group">
-                    <label htmlFor="filename">文件名:</label>
-                    <input type="text" id="filename" name="filename" placeholder="example.json" value={formData.name} onChange={handleChange} />
+                    <label htmlFor="name">文件名:</label>
+                    <input type="text" id="name" name="name" placeholder="example.json" value={formData.name}  />
                 </div>
                 <div className="form-group">
                     <label htmlFor="data">JSON 内容:</label>
-                    <textarea id="data" placeholder='{"key": "value"}' value={formData.data} onChange={handleChange}></textarea>
+                    <textarea id="data" name="data" placeholder='{"key": "value"}' value={formData.data} ></textarea>
                 </div>
 
                 <div className="actions">
