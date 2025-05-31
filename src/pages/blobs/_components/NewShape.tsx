@@ -32,6 +32,7 @@ export default function NewShape(props: Props) {
         const { name, value, type, checked } = e.target;
         setFormData({
             ...formData,
+            [name]: type === 'checkbox' ? checked : value
         });
     };
     const uploadBlob = async () => {
