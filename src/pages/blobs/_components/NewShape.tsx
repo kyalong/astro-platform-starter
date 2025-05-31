@@ -7,7 +7,10 @@ import type { BlobProps } from '../../../types.ts';
 interface Props {
     setLastMutationTime?: Dispatch<SetStateAction<number>>;
 }
-
+interface FormData {
+    name: string;
+    data: string;
+}
 export default function NewShape(props: Props) {
     const { setLastMutationTime } = props;
     const [blobData, setBlobData] = useState<BlobProps>();
