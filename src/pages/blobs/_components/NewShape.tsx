@@ -21,12 +21,7 @@ export default function NewShape(props: Props) {
         setWasUploaded(false);
     };
 
-    // const defaultData = {
-    //     "name": "defaultData",
-    //     "data": {
-    //         "aa": 111
-    //     }
-    // };
+
     const [formData, setFormData] = useState<FormData>({
         name: '',
         data: '',
@@ -78,8 +73,7 @@ export default function NewShape(props: Props) {
                 </button>
             </div> */}
             <div className="container">
-                <h1>JSON 文件管理 (Netlify Blobs)</h1>
-
+                <h2 className="mb-4 text-xl text-center sm:text-xl">JSON 文件管理 (Netlify Blobs)</h2>
                 <div className="form-group">
                     <label htmlFor="name">文件名:</label>
                     <input type="text" id="name" name="name" placeholder="example.json" value={formData.name} onChange={handleChange} />
@@ -91,7 +85,7 @@ export default function NewShape(props: Props) {
 
                 <div className="actions">
                     {/* <button >加载文件</button> */}
-                    <button onClick={uploadBlob} >保存文件</button>
+                    <button className="btn" onClick={uploadBlob} >保存文件</button>
                     {/* <button >删除文件</button> */}
                 </div>
 

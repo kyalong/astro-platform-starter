@@ -32,9 +32,9 @@ export default function StoredShapes(props: Props) {
             method: 'GET'
         });
         const data = await response.json();
-        if (data.blob) {
-            setPreviewData(generateBlob(data.blob));
-        }
+        // if (data.blob) {
+        //     setPreviewData(generateBlob(data.blob));
+        // }
     };
 
     useEffect(() => {
